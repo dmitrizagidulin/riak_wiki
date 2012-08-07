@@ -9,3 +9,4 @@
 * [[Riak Enterprise]]
 * [[Community]]
 * [[Recommended Resources]]
+* [[FAQ]]

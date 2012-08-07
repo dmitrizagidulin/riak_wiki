@@ -1,0 +1,4 @@
+h2. [[What kind of bear is best?]]
+
+<p class=hidden>False. *Blackbear*
+</p>

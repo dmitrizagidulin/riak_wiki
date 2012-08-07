@@ -75,7 +75,7 @@
         <nav id="sidebar" class="wiki">
         {{ page.sidebar }}
         </nav>
-        <article>
+        <article data-title="{{page.title}}">
 
           <hgroup>
             <h1>{{ page.title }}</h1>
@@ -115,6 +115,18 @@
     <!-- end concatenated and minified scripts-->
 
     <script type="text/javascript" language="javascript" src="http://assets.basho.com/js/jquery.dropdownPlain.js"></script>
+
+    <script>
+    $(function(){
+      if($("article[data-title=FAQ]").length > 0) {
+        $('article h2 + p').attr('style', 'visibility:visible');
+        $("article h2").click(function(){
+          $(this).next('p').slideToggle('fast');
+          return false;
+        });
+      }
+    });
+    </script>
 
     <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
